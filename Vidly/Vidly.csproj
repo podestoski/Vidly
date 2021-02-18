@@ -145,6 +145,18 @@
     <Compile Include="Migrations\202102111830299_AddMembershipType.designer.cs">
       <DependentUpon>202102111830299_AddMembershipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102181721097_AddMembershypTypeToCustomer.cs" />
+    <Compile Include="Migrations\202102181721097_AddMembershypTypeToCustomer.designer.cs">
+      <DependentUpon>202102181721097_AddMembershypTypeToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102181727137_AddMembershipTypesValues.cs" />
+    <Compile Include="Migrations\202102181727137_AddMembershipTypesValues.designer.cs">
+      <DependentUpon>202102181727137_AddMembershipTypesValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102181800235_DataAnnotationToCustomer.cs" />
+    <Compile Include="Migrations\202102181800235_DataAnnotationToCustomer.designer.cs">
+      <DependentUpon>202102181800235_DataAnnotationToCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppDbContext.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -218,6 +230,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102111830299_AddMembershipType.resx">
       <DependentUpon>202102111830299_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102181721097_AddMembershypTypeToCustomer.resx">
+      <DependentUpon>202102181721097_AddMembershypTypeToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102181727137_AddMembershipTypesValues.resx">
+      <DependentUpon>202102181727137_AddMembershipTypesValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102181800235_DataAnnotationToCustomer.resx">
+      <DependentUpon>202102181800235_DataAnnotationToCustomer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
