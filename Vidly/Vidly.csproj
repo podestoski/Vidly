@@ -165,11 +165,20 @@
     <Compile Include="Migrations\202102231718386_BirthDayColumnNullable.designer.cs">
       <DependentUpon>202102231718386_BirthDayColumnNullable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202102231737558_AddMovieGenreAndMovieNewColumns.cs" />
+    <Compile Include="Migrations\202102231737558_AddMovieGenreAndMovieNewColumns.designer.cs">
+      <DependentUpon>202102231737558_AddMovieGenreAndMovieNewColumns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202102231744133_AddMovieGenreAndMovieNewColumns1.cs" />
+    <Compile Include="Migrations\202102231744133_AddMovieGenreAndMovieNewColumns1.designer.cs">
+      <DependentUpon>202102231744133_AddMovieGenreAndMovieNewColumns1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppDbContext.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\MovieGenre.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -211,6 +220,7 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -253,6 +263,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102231718386_BirthDayColumnNullable.resx">
       <DependentUpon>202102231718386_BirthDayColumnNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102231737558_AddMovieGenreAndMovieNewColumns.resx">
+      <DependentUpon>202102231737558_AddMovieGenreAndMovieNewColumns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202102231744133_AddMovieGenreAndMovieNewColumns1.resx">
+      <DependentUpon>202102231744133_AddMovieGenreAndMovieNewColumns1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
