@@ -21,30 +21,19 @@ namespace Vidly.Controllers
             base.Dispose(disposing);
         }
 
-        public ActionResult New()
-        {
-            var membershipTypes = _context.MembershipTypes.ToList();
-            var viewModel = new NewCustomerViewModel
-            {
-                Customer = new Customer(),
-                MembershipTypes = membershipTypes
-            };
-            return View(viewModel);
-        }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Customer customer)
+        public ActionResult Save(Customer customer)
         {
             if (!ModelState.IsValid)
             {
-                var viewModel = new NewCustomerViewModel
+                var viewModel = new CustomerFormViewModel
                 {
                     Customer = customer,
                     MembershipTypes = _context.MembershipTypes.ToList()
                 };
 
-                return View("New", viewModel);
+                return View("CustomerForm", viewModel);
             }
 
             if (customer.Id == 0)
@@ -62,6 +51,18 @@ namespace Vidly.Controllers
 
             _context.SaveChanges();
             return RedirectToAction("Index", "Customers");
+        }
+
+        public ActionResult New()
+        {
+            var membershipTypes = _context.MembershipTypes.ToList();
+            var viewModel = new CustomerFormViewModel
+            {
+                Customer = new Customer(),
+                MembershipTypes = membershipTypes
+            };
+
+            return View("CustomerForm", viewModel);
         }
 
         // GET: Customers
@@ -92,13 +93,13 @@ namespace Vidly.Controllers
             if (customer == null)
                 return HttpNotFound();
 
-            var viewModel = new NewCustomerViewModel
+            var viewModel = new CustomerFormViewModel
             {
                 Customer = customer,
                 MembershipTypes = _context.MembershipTypes.ToList()
             };
 
-            return View("New", viewModel);
+            return View("CustomerForm", viewModel);
         }
     }
 }
