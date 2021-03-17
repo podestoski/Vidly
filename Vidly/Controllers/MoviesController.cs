@@ -16,8 +16,7 @@ namespace Vidly.Controllers
 
         public ActionResult Index(int? pageIndex, string sortBy)
         {
-            var movies = _context.Movies.Include(m => m.MovieGenre);
-            return View(movies);
+            return View();
         }
 
         public ActionResult Details(int id)

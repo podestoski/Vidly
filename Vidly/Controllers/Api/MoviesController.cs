@@ -80,7 +80,7 @@ namespace Vidly.Controllers.Api
             return Ok();
         }
 
-        // DELETE /api/Movie/1
+        // DELETE /api/Movies/1
         [HttpDelete]
         public IHttpActionResult DeleteMovie(int id)
         {
