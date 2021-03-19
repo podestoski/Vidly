@@ -13,11 +13,11 @@ namespace Vidly.Controllers.Api
 {
     public class MoviesController : ApiController
     {
-        private AppDbContext _context;
+        private ApplicationDbContext _context;
 
         public MoviesController()
         {
-            _context = new AppDbContext();
+            _context = new ApplicationDbContext();
         }
 
         // GET /api/Movies
