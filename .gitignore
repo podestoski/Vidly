@@ -339,3 +339,4 @@ ASALocalRun/
 # BeatPulse healthcheck temp database
 healthchecksdb
 /notes.txt
+/Vidly/App_Start/Startup.Auth.cs
